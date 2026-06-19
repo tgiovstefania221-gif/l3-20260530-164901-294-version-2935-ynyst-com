@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07101f">
+  <meta name="description" content="可按片名、地区、类型、年份和标签进行站内检索。">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>搜索影片｜静态电影精选站</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="canonical" href="/search.html">
+  <script src="/assets/search-index.js"></script><script defer src="/assets/site.js"></script>
+</head>
+<body>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<header class="site-header">
+  <div class="site-wrap inner">
+    <a class="brand" href="/">
+      <div class="brand-mark">ST</div>
+      <div class="brand-text">
+        <div class="brand-title">静态电影精选站</div>
+        <div class="brand-subtitle">纯静态 · 2000 部影片 · 详情页可播放</div>
+      </div>
+    </a>
+    <nav class="nav"><a href="/" class="">首页</a><a href="/ranking.html" class="">热播榜</a><a href="/search.html" class="active">搜索</a><a href="/categories/hot.html" class="">专题</a></nav>
+  </div>
+</header>
+
+<main class="site-wrap">
+  <section class="hero">
+    <div class="hero-panel">
+      <div class="hero-grid" style="grid-template-columns: 1fr;">
+        <div class="hero-copy">
+          <div class="hero-kicker">站内搜索</div>
+          <h1 class="hero-title">搜索 <span class="accent">片名与标签</span></h1>
+          <p class="hero-desc">输入关键词即可在 2000 条影片中查找匹配内容，支持按类型、地区和年份进一步筛选。</p>
+          <form class="search-tools" action="/search.html" method="get">
+            <input data-search-input name="q" type="search" placeholder="搜索：开膛街、科幻、日韩、战争……">
+            <select data-search-type aria-label="类型筛选">
+              <option value="">全部类型</option>
+              <option value="电影">电影</option>
+              <option value="电视剧">电视剧</option>
+              <option value="剧集">剧集</option>
+              <option value="动画">动画</option>
+              <option value="纪录片">纪录片</option>
+            </select>
+            <select data-search-region aria-label="地区筛选">
+              <option value="">全部地区</option>
+              <option value="中国大陆">中国大陆</option>
+              <option value="中国香港">中国香港</option>
+              <option value="中国台湾">中国台湾</option>
+              <option value="日韩">日韩</option>
+              <option value="欧美">欧美</option>
+              <option value="英国">英国</option>
+            </select>
+            <select data-search-year aria-label="年份筛选">
+              <option value="">全部年份</option>
+              <option value="2026">2026</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="content-card">
+      <div class="content-pad">
+        <div class="search-results" data-search-results></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="site-wrap">
+    <p>纯静态电影站 · 影片信息、分类页、详情页与搜索页均已生成</p>
+  </div>
+</footer>
+</body>
+</html>
